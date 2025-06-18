@@ -12,7 +12,7 @@ $ docker compose up
 ```
 
 This builds the AlloyDB image with PostGIS installed, following the instructions here:
-https://cloud.google.com/alloydb/omni/current/docs/install-postgis?option=debian#linux
+https://cloud.google.com/alloydb/omni/16.3.0/docs/install-postgis?option=debian
 
 In another terminal, run the postgis-test.sql script:
 
