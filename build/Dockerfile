@@ -1,8 +1,9 @@
-FROM google/alloydbomni:16.3.0
+ARG OMNI_VERSION
 
-# AlloyDB Omni doesn't come with POSTGIS pre-installed, see:
-# https://cloud.google.com/alloydb/omni/current/docs/install-postgis?option=debian#linux
+FROM google/alloydbomni:${OMNI_VERSION}
+
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends postgresql-16-postgis-3 && \
-    apt-get purge -y --auto-remove && \
-    rm -rf /var/lib/apt/lists/*
+      apt-get install -y --no-install-recommends \
+      postgresql-16-postgis-3 && \
+      apt-get purge -y --auto-remove && \
+      rm -rf /var/lib/apt/lists/*

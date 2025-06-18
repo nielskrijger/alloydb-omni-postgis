@@ -1,6 +1,9 @@
 services:
   alloydb-omni-postgis:
-    build: ./build
+    build:
+      context: ./build
+      args:
+        OMNI_VERSION: 16.3.0 # When switching to AlloyDB 15.7.1 also update the Dockerfile with PostgreSQL 16 -> 15
     restart: always
     container_name: alloydb-omni-postgis
     shm_size: 4g
