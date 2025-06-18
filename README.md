@@ -1,6 +1,6 @@
-# AlloyDB Postgis issue
+# AlloyDB Omni Postgis issue
 
-- AlloyDB version: 16.3.0
+- AlloyDB Omni version: 16.3.0
 - PostGIS version: 3.5.3
 
 ## Steps to reproduce
